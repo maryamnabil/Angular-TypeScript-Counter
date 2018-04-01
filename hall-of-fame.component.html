@@ -1,0 +1,16 @@
+
+    <div id="del-countdown">
+      <h1>MEGA EVENT</h1>
+      <div id="clock" *ngIf="timer">
+      	<span [ngClass]="{ turn: timing.days }">{{ timer.days }}</span>
+      	<span [ngClass]="{ turn: timing.hours }">{{ timer.hours }}</span>
+      	<span [ngClass]="{ turn: timing.minutes }">{{ timer.minutes }}</span>
+      	<span [ngClass]="{ turn: timing.seconds }">{{ timer.seconds }}</span>
+      </div>
+      <div id="units">
+        <span>Days</span>
+        <span>Hours</span>
+        <span>Minutes</span>
+        <span>Seconds</span>
+      </div>
+    </div>
